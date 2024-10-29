@@ -1,0 +1,105 @@
+body, html {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    margin: 0px;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.player-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(105%);
+}
+
+.icon:active {
+    transform: scale(70%);
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.music-player-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+h5 {
+    font-size: 16px;
+    margin: 0px;
+}
+
+h6 {
+    font-size: 14px;
+    margin: 0px;
+    font-weight: normal;
+    color: gray;
+}
+
+.time-display {
+    margin-bottom: 2px;
+    color: gray;
+}
+
+.slider {
+    appearance: none;
+    flex-grow: 1;
+    height: 4px;
+    background: #d3d3d3;
+    border-radius: 100px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    min-width: 0px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
